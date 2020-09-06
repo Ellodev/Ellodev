@@ -1,2 +1,2 @@
-# nextjs-starter
- My personal starter for NextJS Projects
+# Ellodev
+ My Personal Website
