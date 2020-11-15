@@ -4,9 +4,9 @@ import Webhead from './webhead'
 const Layout = props => {
 	return (
 		<div>
-			<Webhead />
-			<Header />
 			<div className="layout">
+				<Webhead />
+				<Header />
 				{props.children}
 				<div className="legal">
 					<a href="legal">Legal/Impressum</a>
