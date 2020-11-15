@@ -27,7 +27,38 @@ const Index = ({ data }) => (
 					</a>
 				))}
 			</div>
+			<br></br>
+			<br></br>
+			<br></br>
+			<br></br>
+			<br></br>
+			<br></br>
 			<h1>About</h1>
+			<div className="home-info-text-container">
+				<p>Hello! My Name is Ellodev and I code little Web Applications. 
+					<br></br>
+					I do projects alone and with my Friend Sl0wly edits.
+					<br></br>
+					I also have a Youtube Channel. My Name is Ellosounds on the Yt Channel.
+					<br></br>
+					I have Videos of me playing Video Games and i also have Recipies.
+				</p>
+				<img className="info-img" width="600" src="/info.png"></img>
+			</div>
+			<div className="Blog">
+				<h1>Blog</h1>
+				<div className="home-post-container">
+				{data.posts.map((posts) => (
+					<a id={posts.id}>
+						<div id={posts.id} href={posts.link} className="post-card">
+							<h1>{posts.title}</h1>
+							<p>{posts.description}</p>
+							<p className="url">{posts.url}</p>
+						</div>
+					</a>
+				))}
+			</div>
+			</div>
 		</div>
 	</Layout>
 );
